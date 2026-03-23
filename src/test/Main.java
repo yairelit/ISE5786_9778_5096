@@ -17,7 +17,7 @@ import primitives.*;
  * @author Dan Zilberstein
  */
 @SuppressWarnings("java:S109")
-public final class Main {
+public final class  Main {
     /** Default constructor to satisfy JavaDoc generator */
     public Main() { /* to satisfy JavaDoc generator */ }
 
