@@ -5,7 +5,9 @@ package primitives;
  * The direction vector is always kept normalized.
  */
 public class Ray {
+    /** The starting point of the ray. */
     private final Point _origin;
+    /** The normalized direction in which the ray extends. */
     private final Vector _direction;
 
     /**

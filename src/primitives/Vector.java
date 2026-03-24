@@ -3,6 +3,15 @@ package primitives;
 import static primitives.Util.alignZero;
 import static primitives.Util.isZero;
 
+/**
+ * Represents an immutable vector in 3D Euclidean space.
+ * <p>
+ * A vector models a directed difference between two points and supports
+ * the basic linear algebra operations used throughout the geometry package.
+ * Zero vectors are explicitly forbidden and attempts to create or compute a
+ * zero vector result in an {@link IllegalArgumentException}.
+ * </p>
+ */
 public class Vector extends Point {
 
     /** Unit vector along X axis (1,0,0). */

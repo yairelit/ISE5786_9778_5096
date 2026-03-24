@@ -9,6 +9,7 @@ import primitives.Vector;
  * Tube represents an infinite cylindrical tube around an axis ray with a fixed radius.
  */
 public class Tube extends RadialGeometry {
+    /** The central axis ray around which the tube is defined. */
     private final Ray _axis;
 
     /**

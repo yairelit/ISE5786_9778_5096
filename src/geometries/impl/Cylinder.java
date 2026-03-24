@@ -8,6 +8,7 @@ import primitives.Vector;
  * Cylinder represents a finite cylindrical tube with a given height.
  */
 public class Cylinder extends Tube {
+    /** The height of the cylindrical segment. */
     private final double _height;
 
     /**

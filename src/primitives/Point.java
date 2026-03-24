@@ -2,10 +2,21 @@ package primitives;
 
 import static primitives.Util.alignZero;
 
+/**
+ * Represents an immutable point in 3D Euclidean space.
+ * <p>
+ * A point is defined by its three Cartesian coordinates, stored internally
+ * as a {@link Double3}. Points are used as the fundamental location type in
+ * all geometric computations.
+ * </p>
+ */
 public class Point {
-    public static final Point ZERO = new Point(Double3.ZERO);
 
+    /** The origin point (0,0,0) in the 3D coordinate system. */
+    public static final Point ZERO = new Point(Double3.ZERO);
+    /** The underlying triplet of coordinates of this point. */
     protected final Double3 _xyz;
+
 
     public Point(double x, double y, double z) { this._xyz = new Double3(x, y, z); }
 

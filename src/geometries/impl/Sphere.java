@@ -8,6 +8,7 @@ import primitives.Vector;
  * Sphere represents a ball in 3D space defined by a center point and radius.
  */
 public class Sphere extends RadialGeometry {
+    /** The center point of the sphere. */
     private final Point _center;
 
     /**

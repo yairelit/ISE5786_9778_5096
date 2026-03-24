@@ -9,7 +9,9 @@ import primitives.Vector;
  * A plane is defined by a point on the plane and a normalized normal vector.
  */
 public class Plane extends Geometry {
+    /** A reference point that lies on the plane. */
     private final Point _q0;
+    /** The normalized normal vector of the plane. */
     private final Vector _normal;
 
     /**

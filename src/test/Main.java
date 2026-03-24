@@ -47,7 +47,7 @@ public final class  Main {
      * It is intended to be executed again in later stages, without modification,
      * to verify that new code does not break the existing functionality.
      */
-    public static void main() {
+     static void main() {
         pointTests();
         pointDistancesTests();
         vectorDoubleOperationTests();
@@ -212,7 +212,7 @@ public final class  Main {
     /**
      * Basic constructor checks for geometry classes.
      * At this stage most geometry constructors only store the given parameters.
-     * Therefore the tests verify mainly that objects can be created successfully.
+     * Therefore, the tests verify mainly that objects can be created successfully.
      * The only geometry that performs structural validation in its constructor
      * is {@link Polygon}, which checks coplanarity, ordering and convexity.
      * However, Polygon is supplied to the students already tested, therefore
