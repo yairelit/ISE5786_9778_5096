@@ -17,7 +17,7 @@ import primitives.*;
  * @author Dan Zilberstein
  */
 @SuppressWarnings("java:S109")
-public final class  Main {
+public final class Main {
     /** Default constructor to satisfy JavaDoc generator */
     public Main() { /* to satisfy JavaDoc generator */ }
 
@@ -47,7 +47,7 @@ public final class  Main {
      * It is intended to be executed again in later stages, without modification,
      * to verify that new code does not break the existing functionality.
      */
-     static void main() {
+    public static void main() {
         pointTests();
         pointDistancesTests();
         vectorDoubleOperationTests();

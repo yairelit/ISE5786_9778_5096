@@ -17,9 +17,24 @@ public class Point {
     /** The underlying triplet of coordinates of this point. */
     protected final Double3 _xyz;
 
-
+    /**
+     * Constructs a point from its three Cartesian coordinates.
+     *
+     * @param x x-coordinate
+     * @param y y-coordinate
+     * @param z z-coordinate
+     */
     public Point(double x, double y, double z) { this._xyz = new Double3(x, y, z); }
 
+    /**
+     * Constructs a point from an existing coordinate triplet.
+     * <p>
+     * The given {@link Double3} instance is used as the internal representation
+     * of this point's coordinates.
+     * </p>
+     *
+     * @param xyz coordinate triplet representing this point
+     */
     public Point(Double3 xyz) { this._xyz = xyz; }
 
     /**

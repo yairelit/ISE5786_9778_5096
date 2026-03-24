@@ -21,12 +21,34 @@ public class Vector extends Point {
     /** Unit vector along Z axis (0,0,1). */
     public static final Vector AXIS_Z = new Vector(0, 0, 1);
 
+    /**
+     * Constructs a vector from its three Cartesian components.
+     * <p>
+     * The vector must not be the zero vector; if all components are zero an
+     * {@link IllegalArgumentException} is thrown.
+     * </p>
+     *
+     * @param x x-component of the vector
+     * @param y y-component of the vector
+     * @param z z-component of the vector
+     * @throws IllegalArgumentException if {@code (x,y,z)} is the zero vector
+     */
     public Vector(double x, double y, double z) {
         super(x, y, z);
         if (_xyz.equals(Double3.ZERO))
             throw new IllegalArgumentException("Zero vector is not allowed");
     }
 
+    /**
+     * Constructs a vector from an existing {@link Double3} triplet.
+     * <p>
+     * The given coordinate triplet must not represent the zero vector; if it
+     * does, an {@link IllegalArgumentException} is thrown.
+     * </p>
+     *
+     * @param xyz coordinate triplet representing the vector components
+     * @throws IllegalArgumentException if {@code xyz} represents the zero vector
+     */
     public Vector(Double3 xyz) {
         super(xyz);
         if (xyz.equals(Double3.ZERO))
